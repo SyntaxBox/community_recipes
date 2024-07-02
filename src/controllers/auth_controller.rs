@@ -1,6 +1,7 @@
 use crate::services::auth_service;
 use axum::extract::Json;
 use serde::{Deserialize, Serialize};
+
 #[derive(Deserialize)]
 pub struct LoginRequest {
     name: String,
