@@ -1,5 +1,6 @@
 pub mod controllers;
 pub mod routes;
+pub mod services;
 use routes::create_routes;
 
 pub async fn create_app() {
