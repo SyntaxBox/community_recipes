@@ -1,11 +1,11 @@
-pub fn login() {
-    println!("login");
+pub fn login(name: String, password: String) -> String {
+    return "Your name is ".to_owned() + &name + " and your password is " + &password;
 }
 
-pub fn register() {
-    println!("register");
+pub fn register(name: String, password: String) -> String {
+    return "Your name is ".to_owned() + &name + " and your password is " + &password;
 }
 
-pub fn logout() {
-    println!("logout");
+pub fn logout() -> String {
+    return "logout".to_owned();
 }
