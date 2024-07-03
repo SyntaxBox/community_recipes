@@ -1,6 +1,6 @@
-use salamtak_server::create_app;
+use community_recipe::run;
 
 #[tokio::main]
 async fn main() {
-    create_app().await
+    run().await
 }
