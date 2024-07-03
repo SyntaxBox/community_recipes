@@ -1,6 +1,8 @@
 pub mod controllers;
+pub mod db;
 pub mod routes;
 pub mod services;
+
 use routes::create_routes;
 use sea_orm::Database;
 
