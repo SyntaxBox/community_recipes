@@ -3,7 +3,7 @@ pub mod routes;
 pub mod services;
 use routes::create_routes;
 
-pub async fn run() {
+pub async fn run(db_url: String) {
     // build our application with a single route
     let app = create_routes();
 
