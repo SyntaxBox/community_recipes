@@ -1,4 +1,5 @@
 use sea_orm::entity::prelude::*;
+use sea_orm::ActiveModelBehavior;
 
 #[derive(Clone, Debug, PartialEq, DeriveEntityModel)]
 #[sea_orm(table_name = "users")]
@@ -8,8 +9,10 @@ pub struct Model {
     pub username: String,
     pub email: String,
     pub password: String,
+    pub profile_pic: String,
     pub created_at: DateTimeUtc,
     pub updated_at: DateTimeUtc,
+    pub is_verified: bool,
 }
 
 #[derive(Copy, Clone, Debug, EnumIter)]
